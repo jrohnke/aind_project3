@@ -80,9 +80,9 @@ Unload(C4, P2, SFO)
 ### Non-heuristic search
 Tables 1-3 show the comparison between the following different non-heuristic search methods: breadth-first, depth-first, and uniform cost. The methods greedy best-first graph search with h1 and A* search with h1 also belong in this category as both of them are using the constant h1 heuristic, which, since it is constant, is not a true heuristic.
 
-<img src="images/p1_table.png" width="500" style="background-color:white" title="Table 1: Problem 1">
-<img src="images/p2_table.png" width="500" style="background-color:white" title="Table 2: Problem 2">
-<img src="images/p3_table.png" width="500" style="background-color:white" title="Table 3: Problem 3">
+<img src="images/p1_table.png" width="600" style="background-color:white" title="Table 1: Problem 1">
+<img src="images/p2_table.png" width="600" style="background-color:white" title="Table 2: Problem 2">
+<img src="images/p3_table.png" width="600" style="background-color:white" title="Table 3: Problem 3">
 <!--![Table 1: Problem 1](images/p1_table.png)-->
 <!--![Table 2: Problem 2](images/p2_table.png)-->
 <!--![Table 3: Problem 3](images/p3_table.png)-->
@@ -91,6 +91,6 @@ The tables are colour coded with blue showing the best, white the intermediate a
 
 Figures 1-3 show the performance of the search methods relative to each other.
 
-![Figure 1: Problem 1](images/p1_bars1.png)
-![Figure 2: Problem 2](images/p2_bars1.png)
-![Figure 3: Problem 3](images/p3_bars1.png)
+<img src="images/p1_bars_1.png" width="600" style="background-color:white" title="Figure 1: Problem 1">
+<img src="images/p2_bars_1.png" width="600" style="background-color:white" title="Figure 2: Problem 2">
+<img src="images/p3_bars_1.png" width="600" style="background-color:white" title="Figure 3: Problem 3">
