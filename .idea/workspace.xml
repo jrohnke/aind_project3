@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dab54ae4-7b4a-458b-a9f8-898bdc125186" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="aind_project3.iws" />
@@ -43,8 +42,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.3955224">
-                <caret line="102" column="197" selection-start-line="102" selection-start-column="197" selection-end-line="102" selection-end-column="197" />
+              <first_editor vertical-scroll-proportion="0.7089552">
+                <caret line="123" column="395" selection-start-line="123" selection-start-column="395" selection-end-line="123" selection-end-column="395" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -55,7 +54,7 @@
       <file leaf-file-name="my_planning_graph.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_planning_graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.814815">
+            <state vertical-scroll-proportion="120.25926">
               <caret line="280" column="35" selection-start-line="280" selection-start-column="35" selection-end-line="280" selection-end-column="35" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
@@ -744,7 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_planning_graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.814815">
+        <state vertical-scroll-proportion="120.25926">
           <caret line="280" column="35" selection-start-line="280" selection-start-column="35" selection-end-line="280" selection-end-column="35" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
@@ -758,8 +757,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.3955224">
-            <caret line="102" column="197" selection-start-line="102" selection-start-column="197" selection-end-line="102" selection-end-column="197" />
+          <first_editor vertical-scroll-proportion="0.7089552">
+            <caret line="123" column="395" selection-start-line="123" selection-start-column="395" selection-end-line="123" selection-end-column="395" />
             <folding />
           </first_editor>
           <second_editor />

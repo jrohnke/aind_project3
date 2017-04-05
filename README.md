@@ -77,6 +77,8 @@ Unload(C3, P1, JFK)
 Unload(C4, P2, SFO)
 ```
 
+# Results
+
 ### Non-heuristic search
 Tables 1-3 show the comparison between the following different non-heuristic search methods: breadth-first, depth-first, and uniform cost. The methods greedy best-first graph search with h1 and A* search with h1 also belong in this category as both of them are using the constant h1 heuristic, which, since it is constant, is not a true heuristic.
 <p>
@@ -114,3 +116,11 @@ Figures 4-6 show a relative comparison between the two heuristics methods.
 <img src="images/p3_bars_2.png" width="600" style="background-color:white" title="Figure 6: Problem 3, heuristic methods">
 <em><br>Figure 6: Problem 3, heuristic methods<br></em>
 </p>
+
+It is obvious that the A* search with ignore preconditions is faster to compute but requires more node creations, expansions and goal tests. The more complicated the problem gets, the better A* search with level sum performs though. The runtime difference gets less but the difference in nodes created, expanded and goal tested also gets less. 
+
+# Conclusions
+
+In the scope of the current problem and with the implementation of the planning graph, A* search with ignore preconditions is the better heuristic. However, the results and intuition suggests that going to more complicated problems or further optimising the planning graph implementation will lead to a performance increase of A* search with level sum heuristic, making it the method of choice. This is expected since the level sum heuristic requires more computation but gives an estimate that is very close to the actual result, therefore prioritising nodes close to the ideal solution, avoiding unnecessary node expansion and testing.
+
+When it comes to very simple problems, picking a non-heuristic based method is the best option. Calculating a heuristic is more costly than simply and quickly moving through the nodes. It is very quick to implement and run as long as the problem is simple and node creation is quick. As can be seen by the problem 3 results, more complicated problems benefit from a good heuristic based method though. The runtime is shorter than the non-heuristic based methods and there is a significant decrease in nodes created, expanded and goal tested. If the nodes become more complicated, this will lead to an even bigger benefit for the heuristic based method.
