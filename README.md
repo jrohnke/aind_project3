@@ -79,18 +79,38 @@ Unload(C4, P2, SFO)
 
 ### Non-heuristic search
 Tables 1-3 show the comparison between the following different non-heuristic search methods: breadth-first, depth-first, and uniform cost. The methods greedy best-first graph search with h1 and A* search with h1 also belong in this category as both of them are using the constant h1 heuristic, which, since it is constant, is not a true heuristic.
-
+<p>
 <img src="images/p1_table.png" width="600" style="background-color:white" title="Table 1: Problem 1">
+<em>Table 1: Problem 1</em>
 <img src="images/p2_table.png" width="600" style="background-color:white" title="Table 2: Problem 2">
+<em>Table 2: Problem 2</em>
 <img src="images/p3_table.png" width="600" style="background-color:white" title="Table 3: Problem 3">
-<!--![Table 1: Problem 1](images/p1_table.png)-->
-<!--![Table 2: Problem 2](images/p2_table.png)-->
-<!--![Table 3: Problem 3](images/p3_table.png)-->
-
+<em>Table 3: Problem 3</em>
+</p>
 The tables are colour coded with blue showing the best, white the intermediate and red the worst search method for the respective metric (#nodes expanded, #goal tests, #new nodes, plan length, and time). The optimality metric shows if the solution is optimal in length, that is, it consists of the minimum possible number of steps required to go from the initial to the goal state.
 
-Figures 1-3 show the performance of the search methods relative to each other.
+A first observation is that depth first and greedy best first generally perform best when it comes to all heuristics (apart from plan length) but deliver a non-optimal solution. While greedy best first delivers a plan with some additional unnecessary steps, the depth first solution is significantly longer than the ideal one. It can also be noted that A* search with a constant heuristic is identical to the uniform cost search.
 
-<img src="images/p1_bars_1.png" width="600" style="background-color:white" title="Figure 1: Problem 1">
-<img src="images/p2_bars_1.png" width="600" style="background-color:white" title="Figure 2: Problem 2">
-<img src="images/p3_bars_1.png" width="600" style="background-color:white" title="Figure 3: Problem 3">
+For the following comparison, I ignore greedy best first due to non-optimality and A* with h1 since it is identical to the uniform cost method. I include depth first even though it's solution is non optimal, because it is by far the fastest algorithm to produce a solution. So in a case of negligible execution time, this method might still be useful. Figures 1-3 show the performance of the search methods relative to each other.
+<p>
+<img src="images/p1_bars_1.png" width="600" style="background-color:white" title="Figure 1: Problem 1, non-heuristic methods">
+<em>Figure 1: Problem 1, non-heuristic methods</em>
+<img src="images/p2_bars_1.png" width="600" style="background-color:white" title="Figure 2: Problem 2, non-heuristic methods">
+<em>Figure 2: Problem 2, non-heuristic methods</em>
+<img src="images/p3_bars_1.png" width="600" style="background-color:white" title="Figure 3: Problem 3, non-heuristic methods">
+<em>Figure 3: Problem 3, non-heuristic methods</em>
+</p>
+Depth first search delivers non-optimal results but expands and evaluates the fewest nodes and comes to a solution in the least amount of time. The comparison between breadth first and uniform cost search is more interesting since both of them deliver an optimal result. Uniform cost takes longer and tends to create, expand and goal test more nodes. Going from the simple problem 1 to the more complicated problem 3, the difference becomes smaller though. This leads me to believe that as the problems get more complex, uniform cost search will start to create, expand and goal test fewer nodes than breadth first, although it might still require more time to come to a solution.
+
+### Domain-independent heuristics
+The previously shown tables 1-3 also include the results for the two heuristic based methods, A* search with ignore preconditions and A* search with level sum. Both methods deliver optimal solutions. The runtime of A* search with ignore preconditions is comparable to the non-heuristic methods, whereas the runtime for A* search with level sum is significantly higher. When it comes to node creation, expansion and goal testing though, A* search with level sum even beats the depth first search most of the time while A* search with ignore preconditions gives intermediate results.
+
+Figures 4-6 show a relative comparison between the two heuristics methods.
+<p>
+<img src="images/p1_bars_2.png" width="600" style="background-color:white" title="Figure 4: Problem 1, heuristic methods">
+<em>Figure 4: Problem 1, heuristic methods</em>
+<img src="images/p2_bars_2.png" width="600" style="background-color:white" title="Figure 5: Problem 2, heuristic methods">
+<em>Figure 5: Problem 2, heuristic methods</em>
+<img src="images/p3_bars_2.png" width="600" style="background-color:white" title="Figure 6: Problem 3, heuristic methods">
+<em>Figure 6: Problem 3, heuristic methods</em>
+</p>
