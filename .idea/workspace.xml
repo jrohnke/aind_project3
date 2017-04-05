@@ -43,8 +43,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.86567163">
-                <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <first_editor vertical-scroll-proportion="0.3955224">
+                <caret line="102" column="197" selection-start-line="102" selection-start-column="197" selection-end-line="102" selection-end-column="197" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -758,8 +758,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.86567163">
-            <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <first_editor vertical-scroll-proportion="0.3955224">
+            <caret line="102" column="197" selection-start-line="102" selection-start-column="197" selection-end-line="102" selection-end-column="197" />
             <folding />
           </first_editor>
           <second_editor />
